@@ -9,7 +9,7 @@ submitBtn.addEventListener('click', (event) => {
 
   // Check if the inputs are valid
   if (!nameInput.value || !ageInput.value) {
-    alert('Please fill in all fields.');
+    alert('Please enter valid details');
     return;
   }
 
