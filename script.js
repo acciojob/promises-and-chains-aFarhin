@@ -28,13 +28,6 @@ submitBtn.addEventListener('click', (event) => {
   delayPromise
     .then((data) => {
       alert(`Welcome, ${data.name}. You can vote.`);
-      return data.age;
-    })
-    .then((age) => {
-      return { age: age };
-    })
-    .then((data) => {
-      alert(`Age: ${data.age}`);
     })
     .catch((error) => {
       alert(`Oh sorry ${error.name}. You aren't old enough.`);
